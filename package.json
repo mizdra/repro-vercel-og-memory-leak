@@ -1,0 +1,22 @@
+{
+  "name": "repro-vercel-og-memory-leak",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --import tsx/esm --expose-gc main.tsx"
+  },
+  "keywords": [],
+  "author": "mizdra <pp.mizdra@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/og": "^0.6.2",
+    "react": "^18.2.0",
+    "tsx": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.26",
+    "@types/react": "^18.2.65"
+  }
+}
