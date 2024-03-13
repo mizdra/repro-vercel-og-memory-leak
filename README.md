@@ -6,35 +6,26 @@ $ npm start
 > node --import tsx/esm --expose-gc main.tsx
 
        i,         rss,   heapTotal,    heapUsed,    external,arrayBuffers
-       0,   137527296,    22085632,    12088672,    29316871,        8416
-     100,   463880192,    48037888,    12231784,   334307538,        8416
-     200,   766492672,    48300032,    12294616,   639193550,        8416
-     300,  1067139072,    48300032,    12399368,   941052366,        8416
-     400,  1374306304,    48300032,    12451968,  1245991374,        8416
-     500,  1679278080,    48300032,    12478016,  1547850190,        8416
-     600,  1982808064,    48824320,    12514472,  1849709006,        8416
-     700,  2286387200,    48562176,    12590176,  2154648014,        8416
-     800,  2577711104,    18415616,    12475360,  2459914702,        8416
-     900,  2880126976,    18415616,    12489104,  2761773518,        8416
-    1000,  3182706688,    18415616,    12502448,  3063632334,        8416
-    1100,  3485204480,    18415616,    12547632,  3365491150,        8416
-node:internal/encoding:449
-        return decodeUTF8(input, this[kIgnoreBOM], this[kFatal]);
-               ^
-
-TypeError: The encoded data was not valid for encoding utf-8
-    at TextDecoder.decode (node:internal/encoding:449:16)
-    at getStringFromWasm0 (/Users/mizdra/src/localhost/gomi/repro-vercel-og-memory-leak/node_modules/@vercel/og/node_modules/.pnpm/@resvg+resvg-wasm@2.4.0/node_modules/@resvg/resvg-wasm/index.mjs:90:28)
-    at imports.wbg.__wbg_new_15d3966e9981a196 (/Users/mizdra/src/localhost/gomi/repro-vercel-og-memory-leak/node_modules/@vercel/og/node_modules/.pnpm/@resvg+resvg-wasm@2.4.0/node_modules/@resvg/resvg-wasm/index.mjs:407:27)
-    at wasm://wasm/005420d6:wasm-function[515]:0x112c4c
-    at wasm://wasm/005420d6:wasm-function[30]:0x3ffde
-    at Resvg (/Users/mizdra/src/localhost/gomi/repro-vercel-og-memory-leak/node_modules/@vercel/og/node_modules/.pnpm/@resvg+resvg-wasm@2.4.0/node_modules/@resvg/resvg-wasm/index.mjs:249:12)
-    at Resvg2 (/Users/mizdra/src/localhost/gomi/repro-vercel-og-memory-leak/node_modules/@vercel/og/node_modules/.pnpm/@resvg+resvg-wasm@2.4.0/node_modules/@resvg/resvg-wasm/index.mjs:511:5)
-    at render (/Users/mizdra/src/localhost/gomi/repro-vercel-og-memory-leak/node_modules/@vercel/og/src/og.ts:111:19)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at Object.start (/Users/mizdra/src/localhost/gomi/repro-vercel-og-memory-leak/node_modules/@vercel/og/src/index.node.ts:63:24) {
-  code: 'ERR_ENCODING_INVALID_ENCODED_DATA'
-}
-
-Node.js v21.4.0
+       0,   138428416,    22609920,    12092616,    30695228,        8416
+     100,   186302464,    48824320,    13073296,    30163470,        8416
+     200,   198836224,    52756480,    13239360,    32323482,        8416
+     300,   195493888,    54067200,    13347160,    32298234,        8416
+     400,   197918720,    57999360,    13449648,    32222490,        8416
+     500,   199868416,    59310080,    13469104,    32146746,        8416
+     600,   199835648,    60882944,    13532632,    32121498,        8416
+     700,   200409088,    60096512,    13553800,    32146746,        8416
+     800,   201621504,    60882944,    13682360,    32146746,        8416
+     900,   201654272,    62193664,    13646936,    32121498,        8416
+    1000,   201752576,    62455808,    13671104,    32146746,        8416
+    1100,   201523200,    62193664,    13702960,    32121498,        8416
+    1200,   202309632,    62455808,    13781912,    32121498,        8416
+    1300,   202670080,    62717952,    13704016,    32121498,        8416
+    1400,   203096064,    62980096,    13787136,    32121498,        8416
+    1500,   202833920,    63242240,    13772296,    32121498,        8416
+    1600,   202588160,    63504384,    13834568,    32146746,        8416
+    1700,   203161600,    64028672,    13828336,    32121498,        8416
+    1800,   203620352,    64028672,    13856008,    32121498,        8416
+    1900,   203161600,    65077248,    13814192,    32121498,        8416
+    2000,   203980800,    64552960,    13894024,    32121498,        8416
+^C
 ```
